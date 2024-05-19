@@ -1,0 +1,92 @@
+
+/* Styles pour améliorer l'apparence de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header h2 {
+    color: #333;
+}
+.header .profile-link {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+.search-bar {
+    margin-bottom: 20px;
+}
+.search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.search-bar button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}.search-bar {
+    display: flex;
+    align-items: center; /* Pour aligner verticalement le contenu */
+}
+
+.reset-button {
+    display: inline-block;
+    background-color: #ccc;
+    color: #000;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 10px; /* Espacement entre la barre de recherche et le bouton de réinitialisation */
+}
+.image-container {
+    position: relative;
+    width: 100px; /* Largeur de la section d'image */
+    margin-bottom: 20px;
+    display: inline-block; 
+    background-color: #e7dada;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);/* Espacement entre les sections d'image */
+}
+.image-container img {
+    width: 100%; /* Ajuster la largeur de l'image à la largeur de la section */
+    height: auto;
+    border-radius: 5px;
+}
+

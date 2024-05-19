@@ -13,7 +13,7 @@
         <div class="nav-links">
             <a href="/upload_photo">Ajouter une annonce</a>
             <a href="/">Home</a>
-            <a href="/profile">Compte</a>
+            <a href="/profile">Profil</a>
             
             
         </div>
@@ -24,7 +24,7 @@
             <h3>Titre : {{ annonce.title }}</h3>
             <p>Description: {{ annonce.description }}</p>
             <div>
-                {% for image in annonce.images.all %}
+                {% for image in annonce.uploadimage_set.all %}
                     <div class="image-container">
                         <a href="{{ image.image.url }}" target="_blank"> <!-- Lien vers l'image en plein écran -->
                             <img src="{{ image.image.url }}" alt="{{ image.annonce.title }}">

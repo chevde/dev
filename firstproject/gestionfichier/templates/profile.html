@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'profilDetail.css' %}">
+        
+</head>
+<body>
+    <h2>Profil de {{ user.username }}</h2>
+    <a href="/">Home</a>
+    <a href="/photo_list" class="conx">Mes annonces</a>
+    <div class="nav-links">
+        
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="logout-button">Déconnexion</button>
+        </form>
+    </div>
+    <div class="user-info">
+        <h3>Informations de profil :</h3>
+        <p><strong>Nom d'utilisateur :</strong> {{ user.username }}</p>
+        <p><strong>Email :</strong> {{ user.email }}</p>
+        <!-- Ajoutez d'autres informations de profil ici selon vos besoins -->
+    </div>
+</body>
+</html>
